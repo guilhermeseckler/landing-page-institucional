@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  /* Colors */
+  --brand-color1: #4c6ef5;
+  --brand-color2: #364fc7;
+
+  --gray-1: #191c1f;
+  --gray-2: #212529;
+  --gray-3: #343a40;
+  --gray-4: #adb5bd;
+  --gray-5: #ced4da;
+  --gray-6: #edf2ff;
+  --gray-7: #f8f9fa;
+
+  /* Titles */
+  --title-weight: 600;
+
+  --titles-height: 160%;
+  --title1-height: 140%;
+
+  --title1-size: clamp(2rem, 4vw + 1rem, 3.25rem);
+  --title2-size: clamp(1.5rem, 3vw + 1rem, 2.5rem);
+  --title3-size: clamp(1.25rem, 2.5vw + 0.5rem, 2rem);
+  --titles3--size: clamp(1rem, 2vw + 0.5rem, 1.75rem);
+
+  /* Texts */
+  --text-weight: 400;
+  --text-weight-bold: 600;
+
+  --text-height: 150%;
+
+  --text1-size: clamp(1rem, 2vw + 0.5rem, 1.25rem);
+  --text2-size: clamp(0.875rem, 1.5vw + 0.5rem, 1.125rem);
+  --text3-size: clamp(0.75rem, 1vw + 0.5rem, 1rem);
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #1d2124;
+}

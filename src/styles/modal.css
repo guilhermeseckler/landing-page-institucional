@@ -1,0 +1,80 @@
+.modal {
+  padding: 0;
+  border: none;
+}
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.modal__container {
+  background-color: var(--gray-2);
+  border: solid 2px var(--brand-color1);
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, 16.931rem + 11.552vw, 26rem);
+  gap: 2rem;
+  padding: 2.5rem 1.75rem;
+}
+.modal::backdrop {
+  background-color: rgba(25, 28, 31, 0.8);
+}
+.modal__title {
+  font-size: var(--title3-size);
+  font-weight: var(--title-weight);
+  color: var(--gray-7);
+}
+.modal__close {
+  background-color: var(--gray-3);
+  color: var(--gray-4);
+  border-radius: 4px;
+  border: var(--gray-3);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.125rem;
+  font-size: var(--text1-size);
+}
+.modal__text {
+  font-size: var(--text3-size);
+  line-height: var(--text-height);
+  color: var(--gray-5);
+  text-align: justify;
+}
+.modal__input {
+  background-color: var(--gray-1);
+  padding: 0.875rem 1.25rem;
+  border: solid 1px var(--gray-1);
+  font-size: 20px;
+  color: var(--gray-4);
+}
+.modal__input::placeholder {
+  font-size: var(--text1-size);
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.modal__input:focus {
+  background-color: var(--gray-2);
+}
+.modal__input:focus::placeholder {
+  opacity: 0;
+}
+.faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 0.35s ease,
+    opacity 0.3s ease,
+    padding 0.3s ease;
+  padding-top: 0;
+}
+
+.faq--open .faq__answer {
+  max-height: 300px;
+  opacity: 1;
+  padding-top: 0.75rem;
+}
+
+.faq__question {
+  cursor: pointer;
+}
