@@ -14,7 +14,6 @@ This project was developed as part of my ADS (Systems Analysis and Development) 
 
 - Responsive layout with media queries and `clamp()` for fluid typography
 - Sticky header
-- Smooth scroll on banner CTA button
 - FAQ accordion — opens and closes answers on click, one at a time
 - Registration modal using the native `<dialog>` API
 - BEM methodology for CSS class naming
